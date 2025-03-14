@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor Menu</title>
+    <link rel="stylesheet" href="globals4.css" />
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="iphone-pro">
+      <div class="content">
+        <header class="header">
+          <a href="index.html">
+            <h1 class="liquor">Liquor</h1>
+          </a>
+          <button id="viewCart" class="cart-icon" onclick="location.href='index10.html';">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </header>
+        
+        <div id="cartDropdown" class="cart-dropdown">
+          <h3>Cart</h3>
+          <ul id="cartItems"></ul>
+          <p>Total Items: <span id="cartTotal">0</span></p>
+        </div>
+        
+        <main class="main-content">
+          <section class="menu-section" id="beers-section">
+            <div class="section-header">
+              <h2 class="section-title">Beers</h2>
+              <img class="arrow-drop-down" src="https://c.animaapp.com/uyF2DMHr/img/arrow-drop-down-4.svg" alt="Dropdown arrow" />
+            </div>
+            <div class="section-content">
+              <div class="menu-item">
+                <span class="item-name">Budweiser</span>
+                <div class="item-actions">
+                  <span class="item-price">₹295 | ₹1550</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Budweiser (Pint)" data-price="295">Pint</button>
+                    <button class="add-drink-btn" data-name="Budweiser (6 Pints)" data-price="1550">6 Pack</button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Budweiser Magnum</span>
+                <div class="item-actions">
+                  <span class="item-price">₹295 | ₹1550</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Budweiser Magnum (Pint)" data-price="295">Pint</button>
+                    <button class="add-drink-btn" data-name="Budweiser Magnum (6 Pints)" data-price="1550">6 Pack</button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Kingfisher Ultra</span>
+                <div class="item-actions">
+                  <span class="item-price">₹325 | ₹1650</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Kingfisher Ultra (Pint)" data-price="325">Pint</button>
+                    <button class="add-drink-btn" data-name="Kingfisher Ultra (6 Pints)" data-price="1650">6 Pack</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu-section" id="whiskey-section">
+            <div class="section-header">
+              <h2 class="section-title">Whiskey</h2>
+              <img class="arrow-drop-down" src="https://c.animaapp.com/uyF2DMHr/img/arrow-drop-down-4.svg" alt="Dropdown arrow" />
+            </div>
+            <div class="section-content">
+              <div class="menu-item">
+                <span class="item-name">Glenmarangie</span>
+                <div class="item-actions">
+                  <span class="item-price">₹725 | ₹14500</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Glenmarangie (30ml)" data-price="725">30ml</button>
+                    <button class="add-drink-btn" data-name="Glenmarangie (Bottle)" data-price="14500">Bottle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Godawan</span>
+                <div class="item-actions">
+                  <span class="item-price">₹675 | ₹13500</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Godawan (30ml)" data-price="675">30ml</button>
+                    <button class="add-drink-btn" data-name="Godawan (Bottle)" data-price="13500">Bottle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Glenfiddich 12 years</span>
+                <div class="item-actions">
+                  <span class="item-price">₹575 | ₹11500</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Glenfiddich 12 years (30ml)" data-price="575">30ml</button>
+                    <button class="add-drink-btn" data-name="Glenfiddich 12 years (Bottle)" data-price="11500">Bottle</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu-section" id="vodka-section">
+            <div class="section-header">
+              <h2 class="section-title">Vodka</h2>
+              <img class="arrow-drop-down" src="https://c.animaapp.com/uyF2DMHr/img/arrow-drop-down-4.svg" alt="Dropdown arrow" />
+            </div>
+            <div class="section-content">
+              <div class="menu-item">
+                <span class="item-name">Belvedere</span>
+                <div class="item-actions">
+                  <span class="item-price">₹495 | ₹10500</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Belvedere (30ml)" data-price="495">30ml</button>
+                    <button class="add-drink-btn" data-name="Belvedere (Bottle)" data-price="10500">Bottle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Grey Goose</span>
+                <div class="item-actions">
+                  <span class="item-price">₹425 | ₹8500</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" data-name="Grey Goose (30ml)" data-price="425">30ml</button>
+                    <button class="add-drink-btn" data-name="Grey Goose (Bottle)" data-price="8500">Bottle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Absolut</span>
+                <div class="item-actions">
+                  <span class="item-price">₹325 | ₹6500</span>
+                  <div class="add-buttons">
+                    <button class="add-drink-btn" onclick="event.stopPropagation();" data-name="Absolut (30ml)" data-price="325">30ml</button>
+                    <button class="add-drink-btn" onclick="event.stopPropagation();" data-name="Absolut (Bottle)" data-price="6500">Bottle</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

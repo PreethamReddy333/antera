@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="globals2.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="iphone-pro">
+    <header class="fixed-header">
+      <a href="index.html">
+        <img src="https://c.animaapp.com/dQoMBRt2/img/screenshot-from-2025-03-14-15-52-17-1--1@2x.png" alt="Restaurant Logo" class="logo">
+      </a>
+    </header>
+    
+    <div class="container">
+      <div class="search-cart">
+        <input type="text" id="search" placeholder="Search dishes...">
+        <button id="viewCart" class="cart-button" onclick="location.href='index10.html';">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cartCount" class="cart-count">0</span>
+        </button>
+      </div>
+      
+      <div id="cartDropdown" class="cart-dropdown">
+        <h3>Cart</h3>
+        <ul id="cartItems"></ul>
+        <p>Total Items: <span id="cartTotal">0</span></p>
+      </div>
+
+      <h1 class="menu-title">Regional Traditional Starters</h1>
+
+      <div class="dish-container">
+        <div class="dish-card" onclick="location.href='index5.html';" style="cursor: pointer;">
+          <img src="https://c.animaapp.com/dQoMBRt2/img/image-13@2x.png" alt="Crispy Royale Platter" class="dish-image">
+          <div class="dish-info">
+            <h2>Crispy Royale Platter</h2>
+            <p class="price">450</p>
+            <div class="ar-link">
+              <img src="https://c.animaapp.com/dQoMBRt2/img/image-removebg-preview-2--3@2x.png" alt="AR icon" class="ar-icon">
+              <a href="https://raw.githack.com/PreethamReddy333/arjs-gestures/master/Crispy%20Royale%20Platter.html" target="_blank" rel="noopener noreferrer">See AR</a>
+            </div>
+            <button class="add-to-cart" data-name="Crispy Royale Platter" data-price="450">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="https://c.animaapp.com/dQoMBRt2/img/image-12@2x.png" alt="Thotakura Liver Fry" class="dish-image">
+          <div class="dish-info">
+            <h2>Thotakura Liver Fry</h2>
+            <p class="price">650</p>
+            <div class="ar-link">
+              <img src="https://c.animaapp.com/dQoMBRt2/img/image-removebg-preview-2--3@2x.png" alt="AR icon" class="ar-icon">
+              <a href="https://raw.githack.com/PreethamReddy333/arjs-gestures/master/Crispy%20Royale%20Platter.html" target="_blank" rel="noopener noreferrer">See AR</a>
+            </div>
+            <button class="add-to-cart" data-name="Thotakura Liver Fry" data-price="650">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img src="https://c.animaapp.com/dQoMBRt2/img/image-13@2x.png" alt="Mokka Jonna Fry" class="dish-image">
+          <div class="dish-info">
+            <h2>Mokka Jonna Fry</h2>
+            <p class="price">500</p>
+            <div class="ar-link">
+              <img src="https://c.animaapp.com/dQoMBRt2/img/image-removebg-preview-2--3@2x.png" alt="AR icon" class="ar-icon">
+              <a href="https://raw.githack.com/PreethamReddy333/arjs-gestures/master/Crispy%20Royale%20Platter.html" target="_blank" rel="noopener noreferrer">See AR</a>
+            </div>
+            <button class="add-to-cart" data-name="Mokka Jonna Fry" data-price="500">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

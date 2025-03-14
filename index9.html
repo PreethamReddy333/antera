@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages Menu</title>
+    <link rel="stylesheet" href="globals4.css" />
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="iphone-pro">
+      <div class="content">
+        <header class="header">
+          <a href="index.html">
+            <h1 class="beverages">Beverages</h1>
+          </a>
+          <button id="viewCart" class="cart-icon" onclick="location.href='index10.html';">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </header>
+        
+        <div id="cartDropdown" class="cart-dropdown">
+          <h3>Cart</h3>
+          <ul id="cartItems"></ul>
+          <p>Total Items: <span id="cartTotal">0</span></p>
+        </div>
+        
+        <main class="main-content">
+          <section class="menu-section" id="coffee-section">
+            <div class="section-header">
+              <h2 class="section-title">Coffee</h2>
+              <img class="arrow-drop-down" src="https://c.animaapp.com/uyF2DMHr/img/arrow-drop-down-4.svg" alt="Dropdown arrow" />
+            </div>
+            <div class="section-content">
+              <div class="menu-item">
+                <span class="item-name">Espresso</span>
+                <div class="item-actions">
+                  <span class="item-price">₹120</span>
+                  <button class="add-drink-btn" data-name="Espresso" data-price="120">Add</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Cappuccino</span>
+                <div class="item-actions">
+                  <span class="item-price">₹150</span>
+                  <button class="add-drink-btn" data-name="Cappuccino" data-price="150">Add</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Latte</span>
+                <div class="item-actions">
+                  <span class="item-price">₹150</span>
+                  <button class="add-drink-btn" data-name="Latte" data-price="150">Add</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu-section" id="tea-section">
+            <div class="section-header">
+              <h2 class="section-title">Tea</h2>
+              <img class="arrow-drop-down" src="https://c.animaapp.com/uyF2DMHr/img/arrow-drop-down-4.svg" alt="Dropdown arrow" />
+            </div>
+            <div class="section-content">
+              <div class="menu-item">
+                <span class="item-name">Darjeeling</span>
+                <div class="item-actions">
+                  <span class="item-price">₹100</span>
+                  <button class="add-drink-btn" data-name="Darjeeling Tea" data-price="100">Add</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Green Tea</span>
+                <div class="item-actions">
+                  <span class="item-price">₹120</span>
+                  <button class="add-drink-btn" data-name="Green Tea" data-price="120">Add</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Masala Chai</span>
+                <div class="item-actions">
+                  <span class="item-price">₹100</span>
+                  <button class="add-drink-btn" data-name="Masala Chai" data-price="100">Add</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="menu-section" id="softdrinks-section">
+            <div class="section-header">
+              <h2 class="section-title">Soft Drinks</h2>
+              <img class="arrow-drop-down" src="https://c.animaapp.com/uyF2DMHr/img/arrow-drop-down-4.svg" alt="Dropdown arrow" />
+            </div>
+            <div class="section-content">
+              <div class="menu-item">
+                <span class="item-name">Cola</span>
+                <div class="item-actions">
+                  <span class="item-price">₹80</span>
+                  <button class="add-drink-btn" data-name="Cola" data-price="80">Add</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Lemonade</span>
+                <div class="item-actions">
+                  <span class="item-price">₹90</span>
+                  <button class="add-drink-btn" data-name="Lemonade" data-price="90">Add</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <span class="item-name">Sparkling Water</span>
+                <div class="item-actions">
+                  <span class="item-price">₹70</span>
+                  <button class="add-drink-btn" data-name="Sparkling Water" data-price="70">Add</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

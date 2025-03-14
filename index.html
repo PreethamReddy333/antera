@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gloabals1.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <!-- Add Font Awesome for the cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="iphone-pro">
+      <div class="div">
+        <header class="fixed-header">
+          <img class="logo" src="https://c.animaapp.com/JogiG6ed/img/screenshot-from-2025-03-14-15-52-17-1--1@2x.png" alt="Logo" />
+          <button id="viewCart" class="cart-icon" onclick="location.href='index10.html';">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+        </header>
+        
+        <div id="cartDropdown" class="cart-dropdown">
+          <h3>Cart</h3>
+          <ul id="cartItems"></ul>
+          <p>Total Items: <span id="cartTotal">0</span></p>
+        </div>
+        
+        <div class="content">
+          <h1 class="title">View Dine-In Menu</h1>
+          <p class="subtitle">select your category.</p>
+          <div class="category-grid">
+            <a href="index2.html" class="category-item starters">
+              <div class="category-overlay"></div>
+              <h2>Starters</h2>
+            </a>
+            <a href="index8.html" class="category-item liquor">
+              <div class="category-overlay"></div>
+              <h2>Liquor</h2>
+            </a>
+            <a href="index9.html" class="category-item beverages">
+              <div class="category-overlay"></div>
+              <h2>Beverages</h2>
+            </a>
+            <a href="index3.html" class="category-item main-course">
+              <div class="category-overlay"></div>
+              <h2>Main Course</h2>
+            </a>
+            <a href="index4.html" class="category-item desserts">
+              <div class="category-overlay"></div>
+              <h2>Desserts</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
