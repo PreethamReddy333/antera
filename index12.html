@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Video Background Redirect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: black;
+            position: fixed; /* Prevents bouncing on iOS */
+        }
+        
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+        }
+        
+        video {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="https://cdn.glitch.global/68e5fba8-2568-48fc-87eb-811a12d1278d/VID-20250314-WA0006.mp4?v=1741971334641" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <script>
+        // Using addEventListener instead of inline onclick for better mobile compatibility
+        document.body.addEventListener('click', function() {
+            window.location.href = "index.html";
+        });
+        
+        document.body.addEventListener('touchend', function(e) {
+            e.preventDefault(); // Prevents additional events like mouse clicks on touch devices
+            window.location.href = "index.html";
+        });
+        
+        // Force video to play on iOS
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('background-video');
+            video.play().catch(function(error) {
+                console.log("Autoplay prevented:", error);
+                // Create a play button if autoplay fails
+                if (error.name === "NotAllowedError") {
+                    const playButton = document.createElement('div');
+                    playButton.innerHTML = "Tap to play video";
+                    playButton.style.position = "fixed";
+                    playButton.style.top = "50%";
+                    playButton.style.left = "50%";
+                    playButton.style.transform = "translate(-50%, -50%)";
+                    playButton.style.color = "white";
+                    playButton.style.fontSize = "20px";
+                    playButton.style.padding = "20px";
+                    playButton.style.cursor = "pointer";
+                    playButton.style.zIndex = "10";
+                    
+                    playButton.addEventListener('click', function(e) {
+                        e.stopPropagation(); // Prevent triggering redirect
+                        video.play();
+                        this.style.display = "none";
+                    });
+                    
+                    document.body.appendChild(playButton);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
